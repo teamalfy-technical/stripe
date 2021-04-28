@@ -51,7 +51,7 @@
                                 powered by <img class="stripe-svg" src="./images/stripe-logo.svg" alt="pay">
                             </p>
                             <div class="button">
-                                <a href="https://youtu.be/Av4DLu_GheM" target="_blank" class="btn btn-primary btn-block">Watch a demo</a>
+                                <a href="javascript:void(0)"  class="btn btn-primary btn-block popup__toggle">Watch a demo</a>
                             </div>
                             <!-- pagination: on hold -->
                             <!-- <nav class="mt-6" aria-label="Page navigation example">
@@ -82,7 +82,7 @@
                                 powered by <img class="stripe-svg" src="./images/stripe-logo.svg" alt="pay">
                             </p>
                             <div class="button"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
-                                <a href="https://youtu.be/Av4DLu_GheM" target="_blank" class="btn btn-primary btn-block">Watch a demo</a>
+                                <a href="javascript:void(0)" class="btn btn-primary btn-block popup__toggle">Watch a demo</a>
                             </div>
                             <!-- <nav class="mt-6" aria-label="Page navigation example">
                                 <ul class="pagination">
@@ -139,7 +139,7 @@
                             billions of dollars in transactions each year.
                         </p>
                         <div class="button" data-aos-duration="1000" data-aos-delay="700">
-                            <a href="https://youtu.be/Av4DLu_GheM" target="_blank" class="btn btn-primary btn-block">Watch demo here</a>
+                            <a href="javascript:void(0)"  class="btn btn-primary btn-block popup__toggle">Watch demo here</a>
                         </div>
                     </div>
             
@@ -164,7 +164,7 @@
                             You can use tuaneka to set up recurring payments on your stripe account. This means you can automatically create repeat bills for your clients every time without your client having to keep track of your invoices and you get paid on time every time, providing there is money on the clients account. Watch this demo video to see how it works
                         </p>
                         <div class="button">
-                            <a href="https://youtu.be/Av4DLu_GheM" target="_blank" class="btn btn-primary btn-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Watch demo</a>
+                            <a href="javascript:void(0)"  class="btn btn-primary btn-block popup__toggle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Watch demo</a>
                         </div>
                     </div>
 
@@ -253,7 +253,7 @@
                             data is more insightful.
                         </p>
                         <div class="button">
-                            <a href="https://youtu.be/Av4DLu_GheM" target="_blank" class="btn btn-primary btn-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Watch a demo</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-block popup__toggle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Watch a demo</a>
                         </div>
                         </div>
                     </div>
@@ -307,7 +307,7 @@
                     </div>
 
                     <div class="button text-center pt-2 pt-md-5">
-                        <a href="https://youtu.be/Av4DLu_GheM" target="_blank" class="btn btn-primary btn-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Watch a demo</a>
+                        <a href="javascript:void(0)"  class="btn btn-primary btn-block popup__toggle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Watch a demo</a>
                     </div>
                     
                 </div>
@@ -328,7 +328,7 @@
                </div>
 
                <div class="button text-center pt-3  pb-3 pb-md-0">
-                   <a href="https://tuaneka.com/pricing" class="btn btn-primary btn-block">Get Started</a>
+                   <a href="https://tuaneka.com/payment-gateway" class="btn btn-primary btn-block">Get Started</a>
                </div>
 
             </div>
@@ -464,12 +464,18 @@
         </footer> <!-- footer ends here -->
 
     </main> <!-- main-section ends here -->
-
-
+    <div class="popup__overlay">
+        <div class="popup" id="popupVid">
+            <a href="#" class="popup__close"><i class="fas fa-times"></i></a>
+            <iframe src=" https://www.youtube.com/embed/Av4DLu_GheM" frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+    </div>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script src="./js/main.js"></script> -->
+    <script src="./js/main.js"></script>
 
     <script>
         AOS.init();
