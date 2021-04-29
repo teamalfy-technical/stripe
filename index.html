@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuaneka Stripe Integration</title>
+    <title>Tuaneka Paystack Integration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="https://tuaneka.com/images/system/favicon_white.png">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light">
         <div class="container">
             <a class="navbar-brand" href="./index.html">
                 <img class="logo" src="./images/logo_black.png" alt="Logo" width="200">
@@ -45,13 +46,13 @@
 
                     <div class="d-block d-md-none col-12 col-md-6 left-text px-0">
                         <div>
-                            <h1>Tuaneka - Stripe Payments </h1>
+                            <h1>Tuaneka - Paystack Payments </h1>
                             <p class="left-p pb-2">Process payments faster with our <br>
-                                fully-integrated payment solution 
-                                powered by <img class="stripe-svg" src="./images/stripe-logo.svg" alt="pay">
+                                fully-integrated payment solution
+                                powered by <img class="paystack-svg" src="./images/pay.svg" alt="pay">
                             </p>
                             <div class="button">
-                                <a href="javascript:void(0)"  class="btn btn-primary btn-block popup__toggle">Watch a demo</a>
+                                <a href="javascript:void(0)" class="btn btn-primary btn-block popup__toggle"> <svg class="svg-inline--fa fa-play-circle fa-w-16 m-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>Watch demo here</a>
                             </div>
                             <!-- pagination: on hold -->
                             <!-- <nav class="mt-6" aria-label="Page navigation example">
@@ -76,13 +77,13 @@
                    
                     <div class="d-none d-md-grid col-12 col-md-6 left-text px-0">
                         <div>
-                            <h1 data-aos="fade-up" data-aos-duration="1000">Tuaneka - Stripe Payments </h1>
-                            <p  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="left-p">Process payments faster with our <br>
+                            <h1 class=""  data-aos="fade-up" data-aos-duration="1000">Tuaneka - Paystack Payments </h1>
+                            <p  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="left-p ">Process payments faster with our <br>
                                 fully-integrated payment solution
-                                powered by <img class="stripe-svg" src="./images/stripe-logo.svg" alt="pay">
+                                powered by <img class="paystack-svg" src="./images/pay.svg" alt="pay">
                             </p>
-                            <div class="button"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
-                                <a href="javascript:void(0)" class="btn btn-primary btn-block popup__toggle">Watch a demo</a>
+                            <div class="button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                                <a href="javascript:void(0)" class="btn btn-primary btn-block popup__toggle"> <svg class="svg-inline--fa fa-play-circle fa-w-16 m-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>Watch demo here</a>
                             </div>
                             <!-- <nav class="mt-6" aria-label="Page navigation example">
                                 <ul class="pagination">
@@ -106,7 +107,7 @@
 
                     <div class="d-none d-md-grid col-12 col-md-6 px-0 right-img">
                         <div>
-                            <img class="image-responsive" src="./images/hero-img.svg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+                            <img class="image-responsive" src="./images/hero-img.svg" alt="hero-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                         </div>
                     </div>
                 </div>
@@ -117,29 +118,29 @@
         <!-- section-1 -->
         <div class="section-1 section-top" id="section-1">
             <div class="text-center">
-                 <h2 class="fw-600" data-aos="fade-up" data-aos-duration="1000">Tuaneka Payments powered by <img class="stripe-svg" src="./images/stripe-logo.svg" alt="pay"></h2>
-                 <div class="separator col-1 px-0" style="margin: 0 auto;"><hr class="mb-0 mt-0" data-aos="fade-up" data-aos-duration="1000"></div>
+                 <h2 class="fw-600" data-aos="fade-up" data-aos-duration="1000" >Stop chasing payments</h2>
+                 <div class="separator col-1 px-0" style="margin: 0 auto;"><hr class="mb-0 mt-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"></div>
             </div>
             <div class="container section-1-info">
                 <div class="row">
 
                     <div class="col-12 col-md-6 paystack-logo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                         <div class="margin-top-img ">
-                            <img class="image-responsive " src="./images/dashboard.png" alt="">
+                            <img class="image-responsive " src="./images/paystackLogo.svg" alt="">
                         </div>
                     </div>
 
                     <div class="col-12 col-md-6 pt-4 pt-md-0 " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                         <p class="line-height font-s">
-                            With the Stripe integration, your customers can 
-                            pay your invoices using their preferred credit or 
-                            debit card – or with Apple Pay. 
-                            You’ll be joining millions of businesses around the 
-                            world that use Stripe to process hundreds of 
-                            billions of dollars in transactions each year.
+                            Use Paystack payments to get paid faster. It’s 
+                            simple for your customer. The customer can 
+                            pay with a credit card, debit card, Apple Pay, 
+                            and Google Pay.  For your customer, it is fast and 
+                            convenient. For you, it eliminates the costs, 
+                            delays, and non-payment risks of manual billing.
                         </p>
                         <div class="button" data-aos-duration="1000" data-aos-delay="700">
-                            <a href="javascript:void(0)"  class="btn btn-primary btn-block popup__toggle">Watch demo here</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-block popup__toggle"> <svg class="svg-inline--fa fa-play-circle fa-w-16 m-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>Watch demo here</a>
                         </div>
                     </div>
             
@@ -151,25 +152,27 @@
         <!-- section-2 -->
         <div class="section-2 section-top" id="section-2">
 
-            <div class="text-center pt-5 pt-md-0">
-                <h2 class="fw-600" data-aos="fade-up" data-aos-duration="1000">Take the Hustle out of chasing payments</h2>
-                <div class="separator col-1 px-0" style="margin: 0 auto;"><hr class="mb-0 mt-0"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"></div>
+            <div class="text-center">
+                <h2 class="fw-600" data-aos="fade-up" data-aos-duration="1000">Say goodbye to complicated collections</h2>
+                <div class="separator col-1 px-0" style="margin: 0 auto;"><hr class="mb-0 mt-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"></div>
             </div>
 
             <div class="container section-2-info">
                 <div class="row">
 
-                    <div class="col-12 col-md-7 section-2-text px-0  text-md-left">
-                        <p class="line-height font-s" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                            You can use tuaneka to set up recurring payments on your stripe account. This means you can automatically create repeat bills for your clients every time without your client having to keep track of your invoices and you get paid on time every time, providing there is money on the clients account. Watch this demo video to see how it works
+                    <div class="col-12 col-md-7 section-2-text px-0">
+                        <p class="line-height font-s" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" >
+                            Deliver a superior customer experience by providing the 
+                            ability to sign and pay from almost anywhere in the world, 
+                            on most devices.
                         </p>
                         <div class="button">
-                            <a href="javascript:void(0)"  class="btn btn-primary btn-block popup__toggle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Watch demo</a>
+                            <a href="#" class="btn btn-primary btn-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Send an invoice</a>
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-5 pt-3 pt-md-0 section-2-img" >
-                        <img class="image-responsive phone-in-hand" src="./images/connect.png" alt="" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-12 col-md-5 pt-3 pt-md-0 section-2-img">
+                        <img class="image-responsive" src="./images/customer-love-120px-v2 1.png" alt="" data-aos="fade-up" data-aos-duration="1000">
                     </div>
                     
                 </div>
@@ -179,60 +182,59 @@
 
 
         <!-- section-3 -->
-        <!-- <div class="section-3 section-top" id="section-3">
+        <div class="section-3 section-top" id="section-3">
             
             <div class="container section-3-info">
                 <div class="row">
 
-                    <div class="col-12 col-md-5 px-0 section-3-img">
+                    <div class="col-12 col-md-5 px-0 section-3-img" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                         <div class="">
                             <img class="image-responsive" src="./images/cash-icon 1.svg" alt="">
                         </div>
                     </div>
 
                     <div class="col-12 col-md-7 section-3-text px-0 pt-4">
-                        <p class="line-height font-s">
+                        <p class="line-height font-s"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                             Don’t wait until it's too late. Accelerate your cash received and 
                             eliminate the risk of nonpayment
                         </p>
                         <div class="button">
-                            <a href="#" class="btn btn-primary btn-block">Send an invoice</a>
+                            <a href="#" class="btn btn-primary btn-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Send an invoice</a>
                         </div>
                     </div>
                     
                 </div>
             </div>
             
-        </div>  -->
+        </div> <!-- section-3 ends here -->
 
         <!-- section-4 -->
-        <!-- <div class="section-4 section-top  " id="paystack">
+        <div class="section-4 section-top  " id="paystack">
             <div class="container section-4-info  ">
                 <div class="row">
 
                     <div class="col-12 col-md-7 section-4-text px-0">
-                        <p class="customer-p">
+                        <p class="customer-p" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                             Avoid the costs, errors, and time associated with 
                             manual collection of payments.
                         </p>
                         <div class="button">
-                            <a href="#" class="btn btn-primary btn-block">Send an invoice</a>
+                            <a href="#" class="btn btn-primary btn-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Send an invoice</a>
                         </div>
                     </div>
 
                     <div class="col-12 col-md-5 pt-3 pt-md-0 section-4-img px-0">
-                        <img class="image-responsive" src="./images/save-money-130px 1.svg" alt="">
+                        <img class="image-responsive" src="./images/save-money-130px 1.svg" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                     </div>
                     
                 </div>
             </div>
-        </div>  -->
-        <!-- section-4 ends here -->
+        </div> <!-- section-4 ends here -->
 
         <!-- section-5 -->
         <div class="section-5 section-top" id="paystack">
             <div class="text-center">
-                 <h2 class="fw-600" data-aos="fade-up" data-aos-duration="1000">Account for every Stripe Transaction</h2>
+                 <h2 class="fw-600" data-aos="fade-up" data-aos-duration="1000" >Account for every Paystack Transaction</h2>
                  <div class="separator col-1 px-0" style="margin: 0 auto;"><hr class="mb-0 mt-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"></div>
             </div>
             <div class="container section-5-info ">
@@ -244,16 +246,16 @@
 
                     <div class="col-12 col-md-6 section-5-text pt-3 pt-md-0 px-0">
                         <p class="line-height font-s" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-                            Whenever you receive payments on Stripe,
+                            Whenever you receive payments on Paystack,
                             via Tuaneka invoices  you’ll automatically see the 
                             transaction data flow into Tuaneka using the 
-                            Stripe feed. Payments and fees are automatically 
+                            Paystack feed. Payments and fees are automatically 
                             matched to the correct invoices and accounts so 
                             the transaction is reconciled and your business 
                             data is more insightful.
                         </p>
                         <div class="button">
-                            <a href="javascript:void(0)" class="btn btn-primary btn-block popup__toggle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Watch a demo</a>
+                            <a href="javascript:void(0)" class="btn btn-primary btn-block popup__toggle"> <svg class="svg-inline--fa fa-play-circle fa-w-16 m-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>Watch demo here</a>
                         </div>
                         </div>
                     </div>
@@ -265,49 +267,54 @@
         <!-- section-6 -->
         <div class="section-6 section-top  setup" id="paystack">
             <div class="text-center">
-                 <h2 class="fw-600" data-aos="fade-up" data-aos-duration="1000">Set up Stripe in minutes</h2>
-                 <div class="separator col-1 px-0" style="margin: 0 auto;"><hr class="mb-0 mt-0"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"></div>
+                 <h2 class="fw-600"  data-aos="fade-up" data-aos-duration="1000">Set up Paystack in minutes</h2>
+                 <div class="separator col-1 px-0" style="margin: 0 auto;"><hr class="mb-0 mt-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"></div>
             </div>
 
             <div class="container section-6-info">
                 <div class="row">
 
-                    <div class="col-12 col-md-4 section-6-text pt-2 pt-md-0 setup-img-1 px-0 px-md-4" data-aos="zoom-in" data-aos-duration="1000">
-                        <img class="image-responsive mt-0" src="./images/stripe-brand.svg" alt="">
-                        <h4 class="pt-4 ">Add Stripe to Tuaneka</h4>
-                        <p class="pt-2 line-height font-s">
-                            Connect your Stripe account to 
-                            Tuaneka with just a few clicks. If 
-                            you don’t have a Stripe account, 
-                            you can easily create one from 
-                            within Tuaneka.
+                    <div class="col-12 col-md-4 section-6-text pt-2 pt-md-0 setup-img-1 px-0 px-md-4"  data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="image-responsive mt-0" src="./images/1 16.svg" alt="">
+                        <p class="pt-4 line-height font-s">
+                            Whenever you receive payments on Paystack,
+                            via Tuaneka invoices  you’ll automatically see the 
+                            transaction data flow into Tuaneka using the 
+                            Paystack feed. Payments and fees are automatically 
+                            matched to the correct invoices and accounts so 
+                            the transaction is reconciled and your business 
+                            data is more insightful.
                         </p>
                     </div>
 
-                    <div class="col-12 col-md-4 setup-img-2 px-0 px-md-4" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="col-12 col-md-4 setup-img-2 px-0 px-md-4"  data-aos="zoom-in" data-aos-duration="1000">
                         <img class="image-responsive mt-0" src="./images/Group 1336@2x 1.svg" alt="">
-                        <h4 class="pt-4 ">Send Invoice</h4>
-                        <p class="pt-2 line-height font-s">
-                            A ‘Pay now’ button displays 
-                            on your online invoices, allowing 
-                            customers to pay with credit card, 
-                            debit card, or Mobile Money on 
-                            their mobile device.
+                        <p class="pt-4 line-height font-s">
+                            Whenever you receive payments on Paystack,
+                            via Tuaneka invoices  you’ll automatically see the 
+                            transaction data flow into Tuaneka using the 
+                            Paystack feed. Payments and fees are automatically 
+                            matched to the correct invoices and accounts so 
+                            the transaction is reconciled and your business 
+                            data is more insightful.
                         </p>
                     </div>
 
-                    <div class="col-12 col-md-4 setup-img-3 px-0 px-md-4" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="col-12 col-md-4 setup-img-3 px-0 px-md-4"  data-aos="zoom-in" data-aos-duration="1000">
                         <img class="image-responsive mt-0" src="./images/Group 1337.svg" alt="">
-                        <h4 class="pt-4 ">Manage Payments</h4>
-                        <p class="pt-2 line-height font-s">
-                            You choose how often 
-                            payments are deposited 
-                            into your account.
+                        <p class="pt-4 line-height font-s">
+                            Whenever you receive payments on Paystack,
+                            via Tuaneka invoices  you’ll automatically see the 
+                            transaction data flow into Tuaneka using the 
+                            Paystack feed. Payments and fees are automatically 
+                            matched to the correct invoices and accounts so 
+                            the transaction is reconciled and your business 
+                            data is more insightful.
                         </p>
                     </div>
 
-                    <div class="button text-center pt-2 pt-md-5">
-                        <a href="javascript:void(0)"  class="btn btn-primary btn-block popup__toggle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Watch a demo</a>
+                    <div class="button text-center pt-2 pt-md-5">   
+                        <a href="javascript:void(0)" class="btn btn-primary btn-block popup__toggle"> <svg class="svg-inline--fa fa-play-circle fa-w-16 m-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="play-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm115.7 272l-176 101c-15.8 8.8-35.7-2.5-35.7-21V152c0-18.4 19.8-29.8 35.7-21l176 107c16.4 9.2 16.4 32.9 0 42z"></path></svg>Watch demo here</a>                    
                     </div>
                     
                 </div>
@@ -316,15 +323,15 @@
 
         <!-- section-7-->
         <div class="section-7 get-started-section section-top">
-            <div class="container px-0"  data-aos="zoom-in" data-aos-duration="1000">
+            <div class="container px-0" data-aos="zoom-in" data-aos-duration="1000">
 
                 <div class="text-center">
-                    <h2 class="pt-3">Get started with Stripe</h2>
+                    <h2 class="pt-3 pt-md-0">Get started with Paystack</h2>
                     <div class="separator col-1 px-0" style="margin: 0 auto;"><hr class="mb-0 mt-0"></div>
                 </div>
 
                <div class="text pt-3 pt-md-5">
-                   <p>It’s quick and easy to start accepting online invoice payments through Stripe. If you don’t already have one, you can set up a Stripe account from within Tuaneka. It only takes a few minutes to create one, and then the payment magic begins.</p>
+                   <p>It’s quick and easy to start accepting online invoice payments through Paystack. If you don’t already have one, you can set up a Paystack account from within Tuaneka. It only takes a few minutes to create one, and then the payment magic begins.</p>
                </div>
 
                <div class="button text-center pt-3  pb-3 pb-md-0">
@@ -337,7 +344,7 @@
         <!-- footer -->
         <footer>
             <div class="container">
-                <div class="d-flex flex-md-row flex-column   footer-items   justify-content-between">
+                <div class="d-flex flex-md-row flex-column  footer-items   justify-content-between">
 
                     <div class="mb-3 mb-md-0 pr-0 pr-md-3 pr-lg-0">
                         <a class="navbar-brand" href="#">
@@ -346,7 +353,7 @@
 
                         <div class="socials mt-0 mb-3 my-md-4 ">
                             <a  href="" target="blank" class="btn-floating btn-gplus mr-2">
-                                <i class="fab fa-faceWatch-f"></i>
+                                <i class="fab fa-facebook-f"></i>
                             </a>
             
                             <a  href="" target="blank" class="btn-floating btn-li mx-2">
@@ -464,14 +471,13 @@
         </footer> <!-- footer ends here -->
 
     </main> <!-- main-section ends here -->
-    <div class="popup__overlay">
+
+    <div class="popup__overlay" >
         <div class="popup" id="popupVid">
             <a href="#" class="popup__close"><i class="fas fa-times"></i></a>
-            <iframe src=" https://www.youtube.com/embed/Av4DLu_GheM" frameborder="0"
-            allowfullscreen></iframe>
+            <iframe src=" https://www.youtube.com/embed/Av4DLu_GheM" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
-   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -480,6 +486,6 @@
     <script>
         AOS.init();
     </script>
-
+    
 </body>
 </html>
